@@ -1,0 +1,20 @@
+{
+  "name": "opencode-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local stdio MCP server that exposes the opencode CLI coding agent to OpenBot agents.",
+  "type": "module",
+  "main": "server.mjs",
+  "bin": {
+    "opencode-bridge": "server.mjs"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "selftest": "node tests/mcp-selftest.mjs",
+    "smoke": "node tests/smoke-run.mjs"
+  },
+  "dependencies": {}
+}
